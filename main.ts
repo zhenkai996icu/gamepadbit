@@ -1,7 +1,7 @@
 /*
 Copyright (C): 2022, Beijing Robotsweet
 load dependency
-"GamepadBit": "file:../pxt-ghbit"
+"GamepadBit": "file:../pxt-GPBit"
 */
 
 //% color="#C814B8" weight=20 icon="\uf11b"
@@ -37,7 +37,7 @@ namespace GPBit {
         //% blockId="Stepper1" block="Stop"
         Stepper1
     }
-    export enum Angle {
+    export enum AnGle {
         //% blockId="Angle0" block="first gear"
         Angle0 = 0,
         //% blockId="Angle1" block="second gear"
@@ -220,7 +220,7 @@ namespace GPBit {
      * @param index
      */
 
-    //% blockId=GHBit_RGB_Program block="RGB_Program"
+    //% blockId={GPBit}_RGB_Program block="RGB_Program"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -233,7 +233,7 @@ namespace GPBit {
         return yahStrip;
     }
 
-    //% blockId=GHBit_RGB_Program_Close block="RGB_Program_Close"
+    //% blockId=GPBit_RGB_Program_Close block="RGB_Program_Close"
     //% weight=98
     //% blockGap=10
     //% color="#C814B8"
@@ -244,7 +244,7 @@ namespace GPBit {
         GPBit.RGB_Program().show();
     }
 
-    //% blockId=GHBit_Min_Motor_Shake block="Min_Motor_Shake|value %value"
+    //% blockId=GPBit_Min_Motor_Shake block="Min_Motor_Shake|value %value"
     //% weight=97
     //% blockGap=10
     //% color="#C814B8"
@@ -262,7 +262,7 @@ namespace GPBit {
         }
     }
 
-    //% blockId=GHBit_Rocker block="Rocker|value %value"
+    //% blockId=GPBit_Rocker block="Rocker|value %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
@@ -270,8 +270,8 @@ namespace GPBit {
     export function Rocker(value: enRocker): boolean {
 
         pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-        let x = pins.analogReadPin(AnalogPin.P1);
-        let y = pins.analogReadPin(AnalogPin.P2);
+        let x = pins.analogReadPin(AnalogPin.P2);
+        let y = pins.analogReadPin(AnalogPin.P1);
         let z = pins.digitalReadPin(DigitalPin.P8);
         let now_state = enRocker.Nostate;
 
@@ -306,7 +306,7 @@ namespace GPBit {
 
     }
 
-    //% blockId=GHBit_Button block="Button|num %num|value %value"
+    //% blockId=GPBit_Button block="Button|num %num|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#C814B8"
@@ -360,7 +360,7 @@ namespace GPBit {
 
 
 
-    //% blockId=GHBit_Music_Handle block="Music_Handle|%index"
+    //% blockId=GPBit_Music_Handle block="Music_Handle|%index"
     //% weight=92
     //% blockGap=10
     //% color="#C814B8"
@@ -390,7 +390,7 @@ namespace GPBit {
         }
     }
 
-    //% blockId=GHBit_Servo_Handle block="Servo_Handle|num %num|value %value"
+    //% blockId=GPBit_Servo_Handle block="Servo_Handle|num %num|value %value"
     //% weight=91
     //% blockGap=10
     //% color="#C814B8"
@@ -405,7 +405,7 @@ namespace GPBit {
 
     }
 
-    //% blockId=GHBit_Ultrasonic_Handle block="ultrasonic return distance(cm)"
+    //% blockId=GPBit_Ultrasonic_Handle block="ultrasonic return distance(cm)"
     //% color="#C814B8"
     //% weight=90
     //% blockGap=10
@@ -423,7 +423,7 @@ namespace GPBit {
         return Math.idiv(d, 40)
     }
 
-    //% blockId=GHBit_Ultrasonic_Handle_V2 block="ultrasonic_V2 return distance(cm)"
+    //% blockId=GPBit_Ultrasonic_Handle_V2 block="ultrasonic_V2 return distance(cm)"
     //% color="#C814B8"
     //% weight=90
     //% blockGap=10
@@ -441,7 +441,7 @@ namespace GPBit {
         return Math.idiv(d, 58)
     }
 
-    //% blockId=GHBit_RGB_Colorful block="RGB_Colorful|%value"
+    //% blockId=GPBit_RGB_Colorful block="RGB_Colorful|%value"
     //% weight=89
     //% blockGap=10
     //% color="#C814B8"
@@ -499,7 +499,7 @@ namespace GPBit {
         }
     }
 
-    //% blockId=GHBit_Stepper_Motor block="Stepper_Motor|value %value|value1 %value1"
+    //% blockId=GPBit_Stepper_Motor block="Stepper_Motor|value %value|value1 %value1"
     //% weight=88
     //% blockGap=10
     //% color="#C814B8"
@@ -570,7 +570,7 @@ namespace GPBit {
             }
         }
     }
-    //% blockId=GHBit_Min_Motor block="Min_Motor|value %value"
+    //% blockId=GPBit_Min_Motor block="Min_Motor|value %value"
     //% weight=87
     //% blockGap=10
     //% color="#C814B8"
@@ -619,7 +619,7 @@ namespace GPBit {
             }
         }
     }
-    //% blockId=GHBit_Rotate block="Rotate|value %value"
+    //% blockId=GPBit_Rotate block="Rotate|value %value"
     //% weight=86
     //% blockGap=10
     //% color="#C814B8"
@@ -689,7 +689,7 @@ namespace GPBit {
         return a;
     }
 
-    //% blockId=GHBit_Beam block="Beam|value %value"
+    //% blockId=GPBit_Beam block="Beam|value %value"
     //% weight=85
     //% blockGap=10
     //% color="#C814B8"

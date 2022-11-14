@@ -1,8 +1,8 @@
 /*
-Copyright (C): 2010-2019, Shenzhen Yahboom Tech
-modified from liusen
+Copyright (C): 2022, Beijing RobotSweet
+modified from zhang
 load dependency
-"GHBit": "file:../pxt-ghbit"
+"GPBit": "file:../pxt-ghbit"
 */
 
 //% color="#C814B8" weight=20 icon="\uf11b"
